@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Index</title>
+</head>
+<body>
+<table th:if="${bankList != null && bankList != ''}">
+    <tr th:each="b : ${bankList}">
+        <td th:text="${b.name}">TD Bank</td>
+    </tr>
+</table>
+<p>Account list of  all banks</p>
+<table th:if="${accountList != null && accountList != ''}">
+    <tr th:each="a : ${accountList}">
+        <td th:text="${a.email}">le@sheridan.ca</td>
+    </tr>
+</table>
+</body>
+</html>

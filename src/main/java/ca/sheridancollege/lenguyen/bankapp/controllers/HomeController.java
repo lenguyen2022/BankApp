@@ -19,8 +19,8 @@ public class HomeController {
     @GetMapping("/")
     public ModelAndView home() {
         ModelAndView modelAndView = new ModelAndView("index");
-        modelAndView.addObject("accounts", accountRepository.findAll());
-        modelAndView.addObject("banks", bankRepository.findAll());
+        modelAndView.addObject("accountList", accountRepository.findAll());
+        modelAndView.addObject("bankList", bankRepository.findAll());
         return modelAndView;
     }
     @RequestMapping("/addAccount")
