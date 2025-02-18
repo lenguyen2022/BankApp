@@ -13,6 +13,7 @@
 <table th:if="${accountList != null && accountList != ''}">
     <tr th:each="a : ${accountList}">
         <td th:text="${a.email}">le@sheridan.ca</td>
+        <td th:text="${a.accountType}">SAVING</td>
     </tr>
 </table>
 </body>

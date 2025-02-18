@@ -20,10 +20,10 @@ public class Account {
     private Long id;
     @Column(name="EMAIL")
     private String email;
-    @Column(name="BANK_ID")
-    private Long bankId;
     @Column(name="ACCOUNT_TYPE")
     private String accountType;
     @Column(name="BALANCE")
     private Double balance;
+    @Column(name="BANK_ID")
+    private Long bankId;
 }
